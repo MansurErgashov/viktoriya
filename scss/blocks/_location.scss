@@ -1,0 +1,14 @@
+.location {
+    max-width: 1125px;
+    padding-right: 20px;
+    width: 100%;
+}
+.location__iframe {
+    max-width: 1125px;
+    width: 100%;
+}
+@include breakpoint-down(650px) {
+    .location {
+        padding-right: 0px;
+    }
+}

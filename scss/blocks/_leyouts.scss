@@ -1,0 +1,122 @@
+.leyouts {
+    display: flex;
+    align-items: stretch;
+    padding-right: 20px;
+    gap: 30px;
+}
+.preim__box {
+}
+.leyouts__wrapper {
+    max-width: 980px;
+    width: 100%;
+}
+.leyouts__wrapper-heading {
+    text-align: center;
+}
+.leyouts__wrapper-list {
+    @include list-unstyled;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 610px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+    margin-top: 64px;
+    flex-wrap: wrap;
+}
+.leyouts__wrapper-item {
+    &:hover .leyouts__item-link {
+        font-weight: 700;
+        border-bottom: 2px solid #E31E24;
+    }
+}
+.leyouts__item-link {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    text-decoration: none;
+}
+.leyouts__wrapper-variant {
+    margin-top: 80px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    gap: 18px;
+    flex-wrap: wrap-reverse;
+}
+.leyouts__wrapper-variant-list {
+    @include list-unstyled;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.leyouts__wrapper-variant-itemHeading {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+.leyouts__variant-item {
+    max-width: 279px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #000000;
+    padding-bottom: 13px;
+}
+.leyouts__variant-item-span1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+.leyouts__variant-item-span2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+.leyouts__variant-item-link {
+    margin: 50px 0 0 0; 
+    padding: 10px 25px;   
+    max-width: 279px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    background: #E31E24;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.leyouts__wrapper-variant-img {
+    display: block;
+}
+.leyouts__wrapper-btns {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.leyouts__btns-btn {
+    background-color: #fff;
+    border: none;
+}
+.leyouts__btns-btn-img {
+    display: block;
+}

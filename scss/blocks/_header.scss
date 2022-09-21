@@ -1,0 +1,124 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 21px;
+    padding-bottom: 28px;
+    padding-left: 10px;
+    width: 300px;
+    background-color: #FFFFFF;
+    padding-left: 20px;
+}
+.header__link {
+    text-decoration: none;
+}
+.header__link-img {
+    display: block;
+}
+.header__list {
+    @include list-unstyled;
+    padding-top: 48px;
+}
+.header__item {
+    position: relative;
+    &:not(:last-child) {
+        margin-bottom: 12px;
+    }
+    &:hover .header__item-link {
+        color: #E31E24;
+    }
+    &:hover:before {
+        position: absolute;
+        left: -15px;
+        top: 3px;
+        content: '';
+        background-image:  url(../../img/navHover.png);
+        // display: block;
+        width: 10px;
+        height: 9px;
+        z-index: 2;
+    }
+}
+.header__item-link {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    text-decoration: none;
+}
+.header__text {
+    width: 100%;
+    margin: 37px 0 0 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.header__wrapper {
+    margin: 13px 0 0 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    gap: 7px;
+    text-decoration: none;
+}
+.header__wrapper-img {
+    display: block;
+    width: 22px;
+    height: 22px;
+}
+.header__wrapper-span {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    max-width: 170px;
+    width: 100%;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.header__linkEnd {
+    margin: 20px 0 0 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    text-decoration: none;
+    color: #E31E24;
+}
+.header__linkInsta {
+    margin-top: 20px;
+    width: 100%;
+    text-decoration: none;
+}
+.header__link-insta {
+}
+.check {
+    display: none;
+}
+
+@include breakpoint-down(650px) {
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        max-width: 251px;
+        width: 100%;
+        z-index: 5;
+    }
+    .check:checked~.header {
+        display: block;
+    }
+}

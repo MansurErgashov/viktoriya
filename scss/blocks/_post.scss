@@ -1,0 +1,106 @@
+.post {
+    padding-top: 36px;
+    padding-bottom: 60px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.post__wrapper {
+    max-width: 880px;
+    width: 100%;
+    position: relative;
+    border: 0.5px solid #A6A6A6;
+    padding: 52px 15px 13px 20px;
+}
+.post__form {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.post__form-nameLb {
+    max-width: 257px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+.post__form-nameIn {
+    margin-top: 5px;
+    max-width: 257px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 13px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    display: block;
+}
+.post__form-btn {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    background: #E31E24;
+    border: none;
+    padding: 14px 30px;
+    color: #FFFFFF;
+    cursor: pointer;
+    &:hover {
+        padding: 13px 29px;
+        border: 1px solid #E31E24;
+        background-color: #fff;
+        color: #E31E24;
+    }
+}
+.post__form-heading {
+    margin: 0;
+    padding: 0 5px;
+    position: absolute;
+    top: -15px;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    background-color: #fff;
+    color: #000000;
+}
+.post__span {
+    margin: 14px 0 0 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+}
+
+@include breakpoint-down(700px) {
+    .post__wrapper {
+        border: none;
+    }
+}
+
+@include breakpoint-down(450px) {
+    .post__form-heading {
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .post {
+        padding-right: 0px;
+    }
+}
